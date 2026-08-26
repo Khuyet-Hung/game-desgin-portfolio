@@ -297,11 +297,7 @@
       <div class="container">
         <div class="eyebrow" data-key="hero.eyebrow"></div>
         <h1 data-key="hero.title"></h1>
-        <p class="lead">
-          I'm Nguyen Huynh Khuyet Hung, a software engineer transitioning into Game Design.
-          I enjoy turning simple activities into structured gameplay through mechanics,
-          scoring systems, risk/reward decisions, puzzles, and competitive interactions.
-        </p>
+        <p class="lead" data-key="hero.lead"></p>
         <div class="buttons">
           <a class="btn primary" href="#work" data-key="hero.work"></a>
           <a class="btn" href="assets/khuyethung_cv.pdf" download data-key="hero.resume"></a>
@@ -371,19 +367,16 @@
               <h3>Station Hunt</h3>
               <p class="muted" data-key="project.station.desc"></p>
             </div>
-            <div class="meta"><span>20 players</span><span>5 teams × 4</span><span>5 stations</span></div>
+            <div class="meta"><span data-key="meta.20players"></span><span data-key="meta.5teams4"></span><span data-key="meta.5stations"></span></div>
           </a>
 
           <a class="card project-card" href="#beach-games">
             <div>
               <span class="tag" data-key="project.beach.tag"></span>
               <h3>Beach Games: Risk &amp; Reward</h3>
-              <p class="muted">
-                An Olympic-style multiplayer game where teams wager points across
-                eight physical mini-games.
-              </p>
+              <p class="muted" data-key="project.beach.desc"></p>
             </div>
-            <div class="meta"><span>4 hours</span><span>10 players</span><span>2 teams × 5</span></div>
+            <div class="meta"><span data-key="meta.4hours"></span><span data-key="meta.10players"></span><span data-key="meta.2teams5"></span></div>
           </a>
 
           <a class="card project-card" href="#calorie-challenge">
@@ -392,7 +385,7 @@
               <h3>Calorie Challenge</h3>
               <p class="muted" data-key="project.calorie.desc"></p>
             </div>
-            <div class="meta"><span>1 hour</span><span>~10 players</span><span>2 teams</span></div>
+            <div class="meta"><span data-key="meta.1hour"></span><span data-key="meta.about10players"></span><span data-key="meta.2teams"></span></div>
           </a>
         </div>
       </div>
@@ -407,10 +400,10 @@
             <p class="lead" data-key="case1.lead"></p>
           </div>
           <div class="stats">
-            <div class="stat"><small>Duration</small><strong>3 hours</strong></div>
-            <div class="stat"><small>Players</small><strong>20</strong></div>
-            <div class="stat"><small>Teams</small><strong>5 × 4</strong></div>
-            <div class="stat"><small>Stations</small><strong>5 + Secret</strong></div>
+            <div class="stat"><small data-key="stat.duration"></small><strong data-key="meta.3hours"></strong></div>
+            <div class="stat"><small data-key="stat.players"></small><strong>20</strong></div>
+            <div class="stat"><small data-key="stat.teams"></small><strong>5 × 4</strong></div>
+            <div class="stat"><small data-key="stat.stations"></small><strong data-key="stat.5secret"></strong></div>
           </div>
         </div>
 
@@ -423,48 +416,37 @@
           <div class="card">
             <h3 data-key="case1.mechanics"></h3>
             <ul class="muted">
-              <li>Puzzle-based station discovery</li>
-              <li>Location-based exploration</li>
-              <li>Photo verification</li>
-              <li>Station challenges</li>
-              <li>Point-based progression</li>
-              <li>Late-game Secret Station</li>
+              <li data-key="case1.mechanic1"></li>
+              <li data-key="case1.mechanic2"></li>
+              <li data-key="case1.mechanic3"></li>
+              <li data-key="case1.mechanic4"></li>
+              <li data-key="case1.mechanic5"></li>
+              <li data-key="case1.mechanic6"></li>
             </ul>
           </div>
 
           <div class="card wide">
             <h3 data-key="case1.loop"></h3>
             <div class="flow">
-              <span>Receive Clues</span><i class="arrow">→</i>
-              <span>Solve Puzzle</span><i class="arrow">→</i>
-              <span>Find Station</span><i class="arrow">→</i>
-              <span>Take Photo</span><i class="arrow">→</i>
-              <span>Complete Challenge</span><i class="arrow">→</i>
-              <span>Earn Points</span><i class="arrow">→</i>
-              <span>Find Next Station</span>
+              <span data-key="case1.loop1"></span><i class="arrow">→</i>
+              <span data-key="case1.loop2"></span><i class="arrow">→</i>
+              <span data-key="case1.loop3"></span><i class="arrow">→</i>
+              <span data-key="case1.loop4"></span><i class="arrow">→</i>
+              <span data-key="case1.loop5"></span><i class="arrow">→</i>
+              <span data-key="case1.loop6"></span><i class="arrow">→</i>
+              <span data-key="case1.loop7"></span>
             </div>
           </div>
 
           <div class="card">
             <h3 data-key="case1.station"></h3>
-            <p class="muted">
-              Each team received a list of five clues. Solving a clue revealed
-              information needed to locate a station. At the station, the team
-              completed a challenge to earn points.
-            </p>
-            <p class="muted">
-              The original game material included station clues, hints, challenges,
-              and rules for keeping the team together.
-            </p>
+            <p class="muted" data-key="case1.stationText1"></p>
+            <p class="muted" data-key="case1.stationText2"></p>
           </div>
 
           <div class="card">
             <h3 data-key="case1.comeback"></h3>
-            <p class="muted">
-              After 60% of the play time, a Secret Station became available.
-              It offered a high-value scoring opportunity, giving lower-scoring
-              teams a reason to keep competing instead of mentally giving up early.
-            </p>
+            <p class="muted" data-key="case1.comebackText"></p>
           </div>
 
           <div class="card wide">
@@ -489,57 +471,48 @@
             <p class="lead" data-key="case2.lead"></p>
           </div>
           <div class="stats">
-            <div class="stat"><small>Duration</small><strong>4 hours</strong></div>
-            <div class="stat"><small>Players</small><strong>10</strong></div>
-            <div class="stat"><small>Teams</small><strong>2 × 5</strong></div>
-            <div class="stat"><small>Mini-games</small><strong>8</strong></div>
+            <div class="stat"><small data-key="stat.duration"></small><strong data-key="meta.4hours"></strong></div>
+            <div class="stat"><small data-key="stat.players"></small><strong>10</strong></div>
+            <div class="stat"><small data-key="stat.teams"></small><strong>2 × 5</strong></div>
+            <div class="stat"><small data-key="stat.minigames"></small><strong>8</strong></div>
           </div>
         </div>
 
         <div class="case-grid">
           <div class="card">
             <h3 data-key="case1.goal"></h3>
-            <p class="muted">
-              Connect eight simple physical games with a system that creates
-              strategic decisions rather than treating every mini-game as an
-              isolated activity.
-            </p>
+            <p class="muted" data-key="case2.goalText"></p>
           </div>
 
           <div class="card">
             <h3 data-key="case2.resource"></h3>
-            <p class="muted">
-              Each team starts with <strong>100 points</strong>. Before each
-              mini-game, the team decides how many points it is willing to risk.
-            </p>
+            <p class="muted" data-key="case2.resourceText"></p>
           </div>
 
           <div class="card wide">
             <h3 data-key="case2.loop"></h3>
             <div class="flow">
-              <span>100 Starting Points</span><i class="arrow">→</i>
-              <span>Choose Wager</span><i class="arrow">→</i>
-              <span>Play Mini-game</span><i class="arrow">→</i>
-              <span>Win / Lose</span><i class="arrow">→</i>
-              <span>Update Score</span><i class="arrow">→</i>
-              <span>Next Game</span>
+              <span data-key="case2.loop1"></span><i class="arrow">→</i>
+              <span data-key="case2.loop2"></span><i class="arrow">→</i>
+              <span data-key="case2.loop3"></span><i class="arrow">→</i>
+              <span data-key="case2.loop4"></span><i class="arrow">→</i>
+              <span data-key="case2.loop5"></span><i class="arrow">→</i>
+              <span data-key="case2.loop6"></span>
             </div>
-            <div class="formula">
-              WIN = WAGER × 2 &nbsp;&nbsp;|&nbsp;&nbsp; LOSE = WAGER LOST
-            </div>
+            <div class="formula" data-key="case2.formula"></div>
           </div>
 
           <div class="card wide">
             <h3 data-key="case2.games"></h3>
             <div class="flow">
-              <span>Sack Race</span>
-              <span>Capture the Flag</span>
-              <span>Team Water Transport</span>
-              <span>Water Passing by Feet</span>
-              <span>Leaky Pipe Water Transfer</span>
-              <span>Dizzy Race</span>
-              <span>Sandcastle Building</span>
-              <span>Staring Contest</span>
+              <span data-key="case2.game1"></span>
+              <span data-key="case2.game2"></span>
+              <span data-key="case2.game3"></span>
+              <span data-key="case2.game4"></span>
+              <span data-key="case2.game5"></span>
+              <span data-key="case2.game6"></span>
+              <span data-key="case2.game7"></span>
+              <span data-key="case2.game8"></span>
             </div>
           </div>
 
@@ -570,58 +543,41 @@
             <p class="lead" data-key="case3.lead"></p>
           </div>
           <div class="stats">
-            <div class="stat"><small>Duration</small><strong>1 hour</strong></div>
-            <div class="stat"><small>Players</small><strong>~10</strong></div>
-            <div class="stat"><small>Teams</small><strong>2</strong></div>
-            <div class="stat"><small>Core</small><strong>Prediction</strong></div>
+            <div class="stat"><small data-key="stat.duration"></small><strong data-key="meta.1hour"></strong></div>
+            <div class="stat"><small data-key="stat.players"></small><strong data-key="meta.about10short"></strong></div>
+            <div class="stat"><small data-key="stat.teams"></small><strong>2</strong></div>
+            <div class="stat"><small data-key="stat.core"></small><strong data-key="stat.prediction"></strong></div>
           </div>
         </div>
 
         <div class="case-grid">
           <div class="card">
             <h3 data-key="case1.goal"></h3>
-            <p class="muted">
-              Turn a simple “which food has fewer calories?” question into
-              a competitive prediction game where accuracy matters.
-            </p>
+            <p class="muted" data-key="case3.goalText"></p>
           </div>
 
           <div class="card">
-            <h3>Core Interaction</h3>
-            <p class="muted">
-              Each round presents two food images. Teams identify which food
-              has fewer calories and estimate the difference between the two.
-            </p>
+            <h3 data-key="case3.interaction"></h3>
+            <p class="muted" data-key="case3.interactionText"></p>
           </div>
 
           <div class="card wide">
             <h3 data-key="case3.scoring"></h3>
-            <p class="muted">
-              The game rewards both correctness and estimation accuracy.
-              A correct identification provides a baseline score, while the
-              bonus favors the team whose estimate is closer to the actual
-              calorie difference.
-            </p>
-            <div class="formula">
-              BONUS SCORE = ACTUAL CALORIE DIFFERENCE − PREDICTION ERROR
-            </div>
+            <p class="muted" data-key="case3.scoringText"></p>
+            <div class="formula" data-key="case3.formula"></div>
           </div>
 
           <div class="card">
             <h3 data-key="case3.powerups"></h3>
             <ul class="muted">
-              <li>Double-score card</li>
-              <li>Information card revealing which food has more calories</li>
+              <li data-key="case3.powerup1"></li>
+              <li data-key="case3.powerup2"></li>
             </ul>
           </div>
 
           <div class="card">
             <h3 data-key="case3.intent"></h3>
-            <p class="muted">
-              Power-ups introduce an additional strategic layer. Players
-              must decide when information or score multiplication is more
-              valuable instead of relying only on knowledge.
-            </p>
+            <p class="muted" data-key="case3.intentText"></p>
           </div>
 
           <div class="card wide">
@@ -644,18 +600,18 @@
           <div class="card">
             <h3 data-key="activities.club"></h3>
             <ul class="muted">
-              <li>Designed and organized interactive games and activities to increase member engagement.</li>
-              <li>Collaborated on activity concepts, rules, challenges, and event flow.</li>
-              <li>Participated in running activities and observed participant reactions.</li>
+              <li data-key="activities.club1"></li>
+              <li data-key="activities.club2"></li>
+              <li data-key="activities.club3"></li>
             </ul>
           </div>
 
           <div class="card">
             <h3 data-key="activities.volunteer"></h3>
             <ul class="muted">
-              <li>Designed and facilitated interactive games and team activities.</li>
-              <li>Created challenges encouraging teamwork, communication, and competition.</li>
-              <li>Adapted activity flow and rules based on participant engagement and group dynamics.</li>
+              <li data-key="activities.volunteer1"></li>
+              <li data-key="activities.volunteer2"></li>
+              <li data-key="activities.volunteer3"></li>
             </ul>
           </div>
         </div>
@@ -680,7 +636,7 @@
 
   <footer>
     <div class="container">
-      © 2026 Nguyen Huynh Khuyet Hung · Game Designer
+      <span data-key="footer.text"></span>
     </div>
   </footer>
 
@@ -698,10 +654,17 @@ const translations = {
 
 const bilingual = {
   en: {
+    "page.title":"Hung09 — Game Designer Portfolio",
     "hero.eyebrow":"Game Designer · Gameplay · Player Experience",
     "hero.title":"Designing games around <span>choices, challenges,</span> and player engagement.",
     "hero.lead":"I'm Nguyen Huynh Khuyet Hung, a software engineer transitioning into Game Design. I enjoy turning simple activities into structured gameplay through mechanics, scoring systems, risk/reward decisions, puzzles, and competitive interactions.",
     "hero.work":"View Game Design Work", "hero.resume":"View Resume",
+    "meta.20players":"20 players", "meta.5teams4":"5 teams × 4", "meta.5stations":"5 stations",
+    "meta.4hours":"4 hours", "meta.10players":"10 players", "meta.2teams5":"2 teams × 5",
+    "meta.1hour":"1 hour", "meta.about10players":"~10 players", "meta.2teams":"2 teams",
+    "meta.3hours":"3 hours", "meta.about10short":"~10",
+    "stat.duration":"Duration", "stat.players":"Players", "stat.teams":"Teams", "stat.stations":"Stations",
+    "stat.5secret":"5 + Secret", "stat.minigames":"Mini-games", "stat.core":"Core", "stat.prediction":"Prediction",
     "about.eyebrow":"About Me", "about.title":"From software engineering to game design.",
     "about.lead":"My professional background is in software engineering, where I have spent 3+ years building web and mobile products. Alongside that work, I discovered that I particularly enjoy designing interactive experiences: deciding what players should do, what choices they should make, and how rules can keep a group engaged.",
     "about.why":"Why Game Design?", "about.whyText":"I started exploring Game Design through English club and volunteer activities, where I designed and ran multiplayer games for small groups. These experiences made me interested in gameplay loops, scoring, player decisions, competition, and the moment-to-moment experience of participants.",
@@ -718,58 +681,111 @@ const bilingual = {
     "case1.label":"Case Study 01", "case1.title":"Station Hunt", "case1.lead":"Designing exploration and a late-game comeback opportunity for a location-based team game.",
     "case1.goal":"Design Goal", "case1.goalText":"Create an outdoor team experience that encourages exploration, communication, puzzle solving, and continuous competition over a three-hour session.",
     "case1.mechanics":"Core Mechanics", "case1.station":"Station Discovery", "case1.comeback":"Comeback Mechanic", "case1.loop":"Core Gameplay Loop", "case1.intent":"Design Intent", "case1.next":"What I Would Explore Next",
+    "case1.mechanic1":"Puzzle-based station discovery", "case1.mechanic2":"Location-based exploration", "case1.mechanic3":"Photo verification", "case1.mechanic4":"Station challenges", "case1.mechanic5":"Point-based progression", "case1.mechanic6":"Late-game Secret Station",
+    "case1.loop1":"Receive Clues", "case1.loop2":"Solve Puzzle", "case1.loop3":"Find Station", "case1.loop4":"Take Photo", "case1.loop5":"Complete Challenge", "case1.loop6":"Earn Points", "case1.loop7":"Find Next Station",
+    "case1.stationText1":"Each team received a list of five clues. Solving a clue revealed information needed to locate a station. At the station, the team completed a challenge to earn points.",
+    "case1.stationText2":"The original game material included station clues, hints, challenges, and rules for keeping the team together.",
+    "case1.comebackText":"After 60% of the play time, a Secret Station became available. It offered a high-value scoring opportunity, giving lower-scoring teams a reason to keep competing instead of mentally giving up early.",
     "case1.intentText":"The game was designed so that the leaderboard would not feel completely decided too early. Exploration created physical movement and discovery; puzzles created cognitive challenges; station tasks created varied interactions; and the Secret Station added uncertainty late in the game.",
     "case1.nextText":"For a future iteration, I would collect more structured player feedback and analyze station completion times, score gaps, and the impact of the Secret Station on the final ranking. This would help balance station difficulty and comeback potential more systematically.",
     "case2.label":"Case Study 02", "case2.title":"Beach Games: Risk & Reward", "case2.lead":"Turning a collection of physical mini-games into a strategic competition through a shared point economy.",
     "case2.goal":"Design Goal", "case2.resource":"Starting Resource", "case2.loop":"Risk / Reward Loop", "case2.games":"Eight Mini-games", "case2.choice":"Player Choice", "case2.intent":"Design Intent", "case2.next":"What I Would Explore Next",
+    "case2.goalText":"Connect eight simple physical games with a system that creates strategic decisions rather than treating every mini-game as an isolated activity.",
+    "case2.resourceText":"Each team starts with <strong>100 points</strong>. Before each mini-game, the team decides how many points it is willing to risk.",
+    "case2.loop1":"100 Starting Points", "case2.loop2":"Choose Wager", "case2.loop3":"Play Mini-game", "case2.loop4":"Win / Lose", "case2.loop5":"Update Score", "case2.loop6":"Next Game",
+    "case2.formula":"WIN = WAGER × 2 &nbsp;&nbsp;|&nbsp;&nbsp; LOSE = WAGER LOST",
+    "case2.game1":"Sack Race", "case2.game2":"Capture the Flag", "case2.game3":"Team Water Transport", "case2.game4":"Water Passing by Feet", "case2.game5":"Leaky Pipe Water Transfer", "case2.game6":"Dizzy Race", "case2.game7":"Sandcastle Building", "case2.game8":"Staring Contest",
     "case2.choiceText":"The core decision is not simply “Can we win this game?” It is “How much are we willing to risk if we believe we can win?” This creates tension between protecting an existing lead and taking a larger risk for a bigger payoff.",
     "case2.intentText":"The shared point economy links all eight challenges into one larger competitive system. A team's decision in one mini-game affects the resources available for the next one.",
     "case2.nextText":"I would test different wager limits and reward multipliers to understand how much risk players are willing to take and whether the scoring system creates enough opportunities for a trailing team to recover.",
     "case3.label":"Case Study 03", "case3.title":"Calorie Challenge", "case3.lead":"Designing a simple food quiz around prediction accuracy, bonus scoring, and information-based power-ups.",
     "case3.goal":"Design Goal", "case3.interaction":"Core Interaction", "case3.scoring":"Scoring Concept", "case3.powerups":"Power-ups", "case3.intent":"Design Intent", "case3.next":"What I Would Explore Next",
+    "case3.goalText":"Turn a simple “which food has fewer calories?” question into a competitive prediction game where accuracy matters.",
+    "case3.interactionText":"Each round presents two food images. Teams identify which food has fewer calories and estimate the difference between the two.",
+    "case3.scoringText":"The game rewards both correctness and estimation accuracy. A correct identification provides a baseline score, while the bonus favors the team whose estimate is closer to the actual calorie difference.",
+    "case3.formula":"BONUS SCORE = ACTUAL CALORIE DIFFERENCE − PREDICTION ERROR",
+    "case3.powerup1":"Double-score card", "case3.powerup2":"Information card revealing which food has more calories",
+    "case3.intentText":"Power-ups introduce an additional strategic layer. Players must decide when information or score multiplication is more valuable instead of relying only on knowledge.",
     "case3.nextText":"I would test the difficulty of calorie comparisons and the frequency of power-ups to ensure that knowledge, estimation skill, and strategy all contribute meaningfully to the outcome.",
     "activities.eyebrow":"Activities", "activities.title":"Designing and running experiences with real players.",
     "activities.lead":"My Game Design experience started through English club and volunteer activities, where I worked with groups to create and facilitate interactive experiences.",
     "activities.club":"English Club — Development Team Member", "activities.volunteer":"Volunteer Activities — Game & Activity Organizer",
+    "activities.club1":"Designed and organized interactive games and activities to increase member engagement.",
+    "activities.club2":"Collaborated on activity concepts, rules, challenges, and event flow.",
+    "activities.club3":"Participated in running activities and observed participant reactions.",
+    "activities.volunteer1":"Designed and facilitated interactive games and team activities.",
+    "activities.volunteer2":"Created challenges encouraging teamwork, communication, and competition.",
+    "activities.volunteer3":"Adapted activity flow and rules based on participant engagement and group dynamics.",
     "contact.eyebrow":"Contact", "contact.title":"Let's build engaging experiences.", "contact.lead":"I am currently looking for opportunities to grow as a Game Designer, particularly in gameplay, systems, and player experience.",
-    "contact.email":"Email Me", "contact.resume":"Resume"
+    "contact.email":"Email Me", "contact.resume":"Resume",
+    "footer.text":"© 2026 Nguyen Huynh Khuyet Hung · Game Designer"
   },
   vi: {
-    "hero.eyebrow":"Game Designer · Gameplay · Trải nghiệm người chơi",
+    "page.title":"Hung09 — Portfolio Nhà thiết kế game",
+    "hero.eyebrow":"Nhà thiết kế game · Gameplay · Trải nghiệm người chơi",
     "hero.title":"Thiết kế game xoay quanh <span>lựa chọn, thử thách</span> và sự tham gia của người chơi.",
-    "hero.lead":"Tôi là Nguyễn Huỳnh Khuyết Hưng, một Software Engineer đang chuyển hướng sang Game Design. Tôi yêu thích việc biến những hoạt động đơn giản thành gameplay có cấu trúc thông qua mechanics, hệ thống điểm, risk/reward, puzzle và tương tác cạnh tranh.",
+    "hero.lead":"Tôi là Nguyễn Huỳnh Khuyết Hưng, một kỹ sư phần mềm đang chuyển hướng sang thiết kế game. Tôi yêu thích việc biến những hoạt động đơn giản thành gameplay có cấu trúc thông qua cơ chế chơi, hệ thống điểm, rủi ro/phần thưởng, câu đố và tương tác cạnh tranh.",
     "hero.work":"Xem Game Design", "hero.resume":"Xem CV",
-    "about.eyebrow":"Giới thiệu", "about.title":"Từ Software Engineering đến Game Design.",
+    "meta.20players":"20 người chơi", "meta.5teams4":"5 đội × 4", "meta.5stations":"5 trạm",
+    "meta.4hours":"4 giờ", "meta.10players":"10 người chơi", "meta.2teams5":"2 đội × 5",
+    "meta.1hour":"1 giờ", "meta.about10players":"~10 người chơi", "meta.2teams":"2 đội",
+    "meta.3hours":"3 giờ", "meta.about10short":"~10",
+    "stat.duration":"Thời lượng", "stat.players":"Người chơi", "stat.teams":"Đội", "stat.stations":"Trạm",
+    "stat.5secret":"5 + Bí mật", "stat.minigames":"Mini-game", "stat.core":"Cốt lõi", "stat.prediction":"Dự đoán",
+    "about.eyebrow":"Giới thiệu", "about.title":"Từ kỹ thuật phần mềm đến thiết kế game.",
     "about.lead":"Tôi có hơn 3 năm kinh nghiệm phát triển web và mobile. Trong quá trình đó, tôi nhận ra mình đặc biệt yêu thích việc thiết kế trải nghiệm tương tác: người chơi sẽ làm gì, họ phải đưa ra lựa chọn nào và luật chơi có thể giữ họ tham gia như thế nào.",
-    "about.why":"Tại sao Game Design?", "about.whyText":"Tôi bắt đầu khám phá Game Design thông qua các hoạt động của CLB tiếng Anh và nhóm tình nguyện, nơi tôi thiết kế và tổ chức các game multiplayer cho nhóm nhỏ. Những trải nghiệm này khiến tôi quan tâm đến gameplay loop, scoring, quyết định của người chơi, cạnh tranh và trải nghiệm trong từng khoảnh khắc.",
-    "about.bring":"Tôi mang đến điều gì?", "about.bringText":"Nền tảng engineering giúp tôi có tư duy hệ thống, logic, prototyping, hiểu giới hạn kỹ thuật và giải quyết vấn đề. Tôi muốn dùng nền tảng đó để xây dựng gameplay hấp dẫn, thay vì xem design và implementation là hai thế giới tách biệt.",
+    "about.why":"Tại sao thiết kế game?", "about.whyText":"Tôi bắt đầu khám phá thiết kế game thông qua các hoạt động của CLB tiếng Anh và nhóm tình nguyện, nơi tôi thiết kế và tổ chức các game multiplayer cho nhóm nhỏ. Những trải nghiệm này khiến tôi quan tâm đến vòng lặp gameplay, cách tính điểm, quyết định của người chơi, cạnh tranh và trải nghiệm trong từng khoảnh khắc.",
+    "about.bring":"Tôi mang đến điều gì?", "about.bringText":"Nền tảng kỹ thuật giúp tôi có tư duy hệ thống, logic, khả năng prototyping, hiểu giới hạn kỹ thuật và giải quyết vấn đề. Tôi muốn dùng nền tảng đó để xây dựng gameplay hấp dẫn, thay vì xem thiết kế và triển khai là hai thế giới tách biệt.",
     "approach.eyebrow":"Tư duy thiết kế", "approach.title":"Luật đơn giản. Lựa chọn có ý nghĩa. Trải nghiệm hấp dẫn.",
     "approach.lead":"Kinh nghiệm design hiện tại của tôi tập trung vào các game multiplayer nhóm nhỏ. Tôi ưu tiên luật dễ hiểu nhưng vẫn tạo lý do để người chơi giao tiếp, mạo hiểm, cạnh tranh và tiếp tục chơi đến cuối.",
     "approach.choice":"Lựa chọn có ý nghĩa", "approach.choiceText":"Tạo ra những quyết định có khả năng thay đổi kết quả.",
     "approach.tension":"Căng thẳng cạnh tranh", "approach.tensionText":"Dùng điểm số, thời gian và phần thưởng để giữ kết quả chưa thể đoán trước.",
     "approach.engagement":"Sự tham gia", "approach.engagementText":"Thiết kế loop khiến người chơi luôn có lý do để tiếp tục tham gia.",
-    "work.eyebrow":"Selected Work", "work.title":"Game Design Projects", "work.lead":"Ba trải nghiệm multiplayer được tôi thiết kế và tổ chức với người chơi thực tế.",
+    "work.eyebrow":"Dự án tiêu biểu", "work.title":"Các dự án Game Design", "work.lead":"Ba trải nghiệm multiplayer được tôi thiết kế và tổ chức với người chơi thực tế.",
     "project.station.tag":"Khám phá · Puzzle · Comeback", "project.station.desc":"Game nhóm 3 giờ theo hình thức location-based, kết hợp clue, khám phá, thử thách tại trạm, tính điểm và Secret Station ở cuối game.",
     "project.beach.tag":"Risk · Reward · Cạnh tranh", "project.beach.desc":"Game multiplayer kiểu Olympic, nơi các đội đặt cược điểm trước tám mini-game thể chất.",
-    "project.calorie.tag":"Prediction · Accuracy · Power-ups", "project.calorie.desc":"Game dự đoán 1 giờ kết hợp trả lời đúng, độ chính xác khi ước lượng, bonus score và thẻ thông tin chiến thuật.",
-    "case1.label":"Case Study 01", "case1.title":"Station Hunt", "case1.lead":"Thiết kế exploration và cơ chế comeback cuối game cho một game nhóm theo địa điểm.",
+    "project.calorie.tag":"Dự đoán · Độ chính xác · Power-up", "project.calorie.desc":"Game dự đoán 1 giờ kết hợp trả lời đúng, độ chính xác khi ước lượng, bonus score và thẻ thông tin chiến thuật.",
+    "case1.label":"Nghiên cứu tình huống 01", "case1.title":"Station Hunt", "case1.lead":"Thiết kế khám phá và cơ chế comeback cuối game cho một game nhóm theo địa điểm.",
     "case1.goal":"Mục tiêu thiết kế", "case1.goalText":"Tạo một trải nghiệm outdoor khuyến khích khám phá, giao tiếp, giải puzzle và duy trì cạnh tranh trong suốt 3 giờ.",
-    "case1.mechanics":"Core Mechanics", "case1.station":"Khám phá trạm", "case1.comeback":"Comeback Mechanic", "case1.loop":"Core Gameplay Loop", "case1.intent":"Ý đồ thiết kế", "case1.next":"Hướng phát triển tiếp theo",
-    "case1.intentText":"Game được thiết kế để bảng xếp hạng không bị quyết định quá sớm. Exploration tạo chuyển động và cảm giác khám phá; puzzle tạo thử thách tư duy; nhiệm vụ tại trạm tạo tương tác đa dạng; Secret Station tạo thêm sự bất ngờ ở giai đoạn cuối.",
+    "case1.mechanics":"Cơ chế cốt lõi", "case1.station":"Khám phá trạm", "case1.comeback":"Cơ chế comeback", "case1.loop":"Vòng lặp gameplay chính", "case1.intent":"Ý đồ thiết kế", "case1.next":"Hướng phát triển tiếp theo",
+    "case1.mechanic1":"Tìm trạm thông qua puzzle", "case1.mechanic2":"Khám phá dựa trên địa điểm", "case1.mechanic3":"Xác minh bằng hình ảnh", "case1.mechanic4":"Thử thách tại trạm", "case1.mechanic5":"Tiến trình dựa trên điểm số", "case1.mechanic6":"Secret Station ở cuối game",
+    "case1.loop1":"Nhận gợi ý", "case1.loop2":"Giải puzzle", "case1.loop3":"Tìm trạm", "case1.loop4":"Chụp ảnh", "case1.loop5":"Hoàn thành thử thách", "case1.loop6":"Nhận điểm", "case1.loop7":"Tìm trạm tiếp theo",
+    "case1.stationText1":"Mỗi đội nhận một danh sách gồm năm gợi ý. Khi giải được gợi ý, đội sẽ có thông tin cần thiết để xác định vị trí trạm. Tại trạm, đội hoàn thành thử thách để nhận điểm.",
+    "case1.stationText2":"Tài liệu gốc của game bao gồm clue, hint, thử thách và luật yêu cầu đội phải di chuyển cùng nhau.",
+    "case1.comebackText":"Sau 60% thời lượng chơi, Secret Station được mở. Đây là cơ hội ghi điểm cao, giúp các đội đang thấp điểm vẫn có lý do để tiếp tục cạnh tranh thay vì bỏ cuộc sớm về mặt tinh thần.",
+    "case1.intentText":"Game được thiết kế để bảng xếp hạng không bị quyết định quá sớm. Phần khám phá tạo chuyển động và cảm giác tìm tòi; câu đố tạo thử thách tư duy; nhiệm vụ tại trạm tạo tương tác đa dạng; Secret Station tạo thêm sự bất ngờ ở giai đoạn cuối.",
     "case1.nextText":"Ở phiên bản tiếp theo, tôi muốn thu thập feedback có cấu trúc hơn và phân tích thời gian hoàn thành từng trạm, khoảng cách điểm và ảnh hưởng của Secret Station đến thứ hạng cuối. Từ đó có thể cân bằng độ khó và comeback tốt hơn.",
-    "case2.label":"Case Study 02", "case2.title":"Beach Games: Risk & Reward", "case2.lead":"Biến một chuỗi mini-game thể chất thành một cuộc cạnh tranh có tính chiến thuật thông qua shared point economy.",
-    "case2.goal":"Mục tiêu thiết kế", "case2.resource":"Tài nguyên ban đầu", "case2.loop":"Risk / Reward Loop", "case2.games":"Tám mini-game", "case2.choice":"Lựa chọn của người chơi", "case2.intent":"Ý đồ thiết kế", "case2.next":"Hướng phát triển tiếp theo",
+    "case2.label":"Nghiên cứu tình huống 02", "case2.title":"Beach Games: Risk & Reward", "case2.lead":"Biến một chuỗi mini-game thể chất thành một cuộc cạnh tranh có tính chiến thuật thông qua hệ thống điểm chung.",
+    "case2.goal":"Mục tiêu thiết kế", "case2.resource":"Tài nguyên ban đầu", "case2.loop":"Vòng lặp Risk / Reward", "case2.games":"Tám mini-game", "case2.choice":"Lựa chọn của người chơi", "case2.intent":"Ý đồ thiết kế", "case2.next":"Hướng phát triển tiếp theo",
+    "case2.goalText":"Kết nối tám game thể chất đơn giản bằng một hệ thống tạo ra quyết định chiến thuật, thay vì xem mỗi mini-game là một hoạt động tách rời.",
+    "case2.resourceText":"Mỗi đội bắt đầu với <strong>100 điểm</strong>. Trước mỗi mini-game, đội quyết định mình sẵn sàng mạo hiểm bao nhiêu điểm.",
+    "case2.loop1":"100 điểm ban đầu", "case2.loop2":"Chọn mức cược", "case2.loop3":"Chơi mini-game", "case2.loop4":"Thắng / Thua", "case2.loop5":"Cập nhật điểm", "case2.loop6":"Game tiếp theo",
+    "case2.formula":"THẮNG = ĐIỂM CƯỢC × 2 &nbsp;&nbsp;|&nbsp;&nbsp; THUA = MẤT ĐIỂM CƯỢC",
+    "case2.game1":"Nhảy bao bố", "case2.game2":"Cướp cờ", "case2.game3":"Chuyền nước đồng đội", "case2.game4":"Chuyền nước bằng chân", "case2.game5":"Chuyền nước qua ống thủng", "case2.game6":"Chạy xoay vòng", "case2.game7":"Xây lâu đài cát", "case2.game8":"Thi nhìn không chớp mắt",
     "case2.choiceText":"Quyết định cốt lõi không chỉ là “Đội mình có thắng game này không?” mà là “Nếu tin mình sẽ thắng, mình sẵn sàng mạo hiểm bao nhiêu điểm?”. Điều này tạo căng thẳng giữa bảo toàn lợi thế và mạo hiểm để nhận phần thưởng lớn hơn.",
-    "case2.intentText":"Shared point economy kết nối cả tám thử thách thành một hệ thống cạnh tranh lớn. Quyết định ở mini-game hiện tại ảnh hưởng trực tiếp đến tài nguyên cho các game tiếp theo.",
+    "case2.intentText":"Hệ thống điểm chung kết nối cả tám thử thách thành một hệ thống cạnh tranh lớn. Quyết định ở mini-game hiện tại ảnh hưởng trực tiếp đến tài nguyên cho các game tiếp theo.",
     "case2.nextText":"Tôi muốn thử nghiệm các giới hạn cược và hệ số thưởng khác nhau để hiểu mức độ chấp nhận rủi ro của người chơi và xem hệ thống có tạo đủ cơ hội comeback cho đội đang thua hay không.",
-    "case3.label":"Case Study 03", "case3.title":"Calorie Challenge", "case3.lead":"Thiết kế một food quiz dựa trên độ chính xác của dự đoán, bonus scoring và power-up cung cấp thông tin.",
-    "case3.goal":"Mục tiêu thiết kế", "case3.interaction":"Core Interaction", "case3.scoring":"Scoring", "case3.powerups":"Power-ups", "case3.intent":"Ý đồ thiết kế", "case3.next":"Hướng phát triển tiếp theo",
+    "case3.label":"Nghiên cứu tình huống 03", "case3.title":"Calorie Challenge", "case3.lead":"Thiết kế một quiz về món ăn dựa trên độ chính xác của dự đoán, điểm bonus và power-up cung cấp thông tin.",
+    "case3.goal":"Mục tiêu thiết kế", "case3.interaction":"Tương tác cốt lõi", "case3.scoring":"Cách tính điểm", "case3.powerups":"Power-up", "case3.intent":"Ý đồ thiết kế", "case3.next":"Hướng phát triển tiếp theo",
+    "case3.goalText":"Biến câu hỏi đơn giản “món nào ít calorie hơn?” thành một game dự đoán cạnh tranh, nơi độ chính xác thật sự quan trọng.",
+    "case3.interactionText":"Mỗi vòng đưa ra hai hình ảnh món ăn. Các đội xác định món nào ít calorie hơn và ước lượng chênh lệch calorie giữa hai món.",
+    "case3.scoringText":"Game thưởng cho cả câu trả lời đúng và độ chính xác khi ước lượng. Trả lời đúng tạo điểm nền, còn bonus nghiêng về đội có dự đoán gần với chênh lệch calorie thực tế hơn.",
+    "case3.formula":"ĐIỂM BONUS = CHÊNH LỆCH CALORIE THỰC TẾ − SAI SỐ DỰ ĐOÁN",
+    "case3.powerup1":"Thẻ nhân đôi điểm", "case3.powerup2":"Thẻ thông tin cho biết món nào nhiều calorie hơn",
+    "case3.intentText":"Power-up thêm một lớp chiến thuật vào game. Người chơi phải quyết định khi nào thông tin hoặc nhân điểm có giá trị hơn, thay vì chỉ dựa vào kiến thức.",
     "case3.nextText":"Tôi muốn thử nghiệm độ khó của các cặp món ăn và tần suất power-up để đảm bảo kiến thức, khả năng ước lượng và chiến thuật đều đóng góp có ý nghĩa vào kết quả.",
     "activities.eyebrow":"Hoạt động", "activities.title":"Thiết kế và tổ chức trải nghiệm với người chơi thực tế.",
-    "activities.lead":"Kinh nghiệm Game Design của tôi bắt đầu từ CLB tiếng Anh và các hoạt động tình nguyện, nơi tôi cùng mọi người tạo và vận hành các trải nghiệm tương tác.",
-    "activities.club":"English Club — Thành viên Development Team", "activities.volunteer":"Hoạt động tình nguyện — Game & Activity Organizer",
-    "contact.eyebrow":"Liên hệ", "contact.title":"Let's build engaging experiences.", "contact.lead":"Tôi đang tìm kiếm cơ hội phát triển với vai trò Game Designer, đặc biệt trong gameplay, systems và player experience.",
-    "contact.email":"Gửi Email", "contact.resume":"CV"
+    "activities.lead":"Kinh nghiệm thiết kế game của tôi bắt đầu từ CLB tiếng Anh và các hoạt động tình nguyện, nơi tôi cùng mọi người tạo và vận hành các trải nghiệm tương tác.",
+    "activities.club":"CLB tiếng Anh — Thành viên nhóm phát triển", "activities.volunteer":"Hoạt động tình nguyện — Người tổ chức game và hoạt động",
+    "activities.club1":"Thiết kế và tổ chức game, hoạt động tương tác nhằm tăng mức độ tham gia của thành viên.",
+    "activities.club2":"Cộng tác xây dựng ý tưởng hoạt động, luật chơi, thử thách và luồng sự kiện.",
+    "activities.club3":"Tham gia vận hành hoạt động và quan sát phản ứng của người tham gia.",
+    "activities.volunteer1":"Thiết kế và dẫn dắt các game tương tác và hoạt động nhóm.",
+    "activities.volunteer2":"Tạo thử thách khuyến khích teamwork, giao tiếp và cạnh tranh.",
+    "activities.volunteer3":"Điều chỉnh luồng hoạt động và luật chơi dựa trên mức độ tham gia và tương tác của nhóm.",
+    "contact.eyebrow":"Liên hệ", "contact.title":"Cùng xây dựng những trải nghiệm hấp dẫn.", "contact.lead":"Tôi đang tìm kiếm cơ hội phát triển với vai trò nhà thiết kế game, đặc biệt trong gameplay, hệ thống và trải nghiệm người chơi.",
+    "contact.email":"Gửi Email", "contact.resume":"CV",
+    "footer.text":"© 2026 Nguyễn Huỳnh Khuyết Hưng · Game Designer"
   }
 };
 
@@ -780,6 +796,7 @@ function setText(key, value) {
 
 function applyLanguage(lang) {
   document.documentElement.lang = lang === "vi" ? "vi" : "en";
+  document.title = bilingual[lang]?.["page.title"] || bilingual.en["page.title"];
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.dataset.i18n;
     if (translations[lang]?.[key]) el.textContent = translations[lang][key];
